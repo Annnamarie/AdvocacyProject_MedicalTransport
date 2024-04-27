@@ -43,4 +43,6 @@ Features:
 [x] A reduce motion button in the site header turns off the scrolling animation
 
 **Demo**
+
+See uploaded gifs
 ![]("https://github.com/Annnamarie/AdvocacyProject_MedicalTransport/blob/main/AdvocacyProject_DarkMode.gif")
