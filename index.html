@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <title>Medical Transportation Finder</title> 
+  <link rel="icon" href="img/TransportIcon.png">
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#title">Home</a></li>
+      <li><a href="#interesting">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#sign-petition">Petition</a></li>
+       <li ><button id="theme-button">Toggle Dark Mode</button></li>
+      <li ><button id="reduce-motion">Reduce Motion</button></li>
+    </ul>
+  </div>
+
+  <div class="overall revealable">
+    <div class="header-container revealable">
+      <div class="header-item">
+        <img id="header-img" src="img/transport_icon.png" alt="Transport icon" width="900" height="300"/>
+      </div>
+      <div class="header-item revealable">
+        <h1 id="title">Medical Transportation Finder</h1>
+        <h3> Find your transport</h3>
+        <button type="button" class="header-button">Find Transport</button>
+        <button type="button" class="header-button">List of Companies</button>
+      </div>
+    </div>
+
+    <!--- Video about Medical Transport Issues --->
+    <div class="revealable">
+      <h3 id="interesting">Why is Medical Tranportation an issue?</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/sgHei1AMgc4?si=WPeAA6OkFqHbNeVe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="revealable">>
+    <!--- About --->
+      <h2 class="important">NEMT (Non Emergency Medical Transportation)</h2>
+      <p>There are many patients that struggle to find transportation for their medical appointments. Some are not aware that this a feature that their insurance provides and others do not want to go through the hassle of calling their insurance and be transferred multiple times just to get to the correct department. This website, Medical Transportation Finder, is a great tool that will provide you the information to contact the scheduler of the transportation company directly.
+      </p>
+    </div>
+
+    <div class="revealable">
+      <!--- Data --->
+      <h3>More Information</h3>
+      <img src="img/transportStats.JPG" width="500" height="300" alt="Transport Stats"/>
+      <h4>This chart demonstrates the number of patients that did not get needed healthcare due to the lack of transportation. </h4>
+  
+      <!--- Impact --->
+      <h2 class="important" id="impact">Impact!</h2>
+
+      <div class="revealable">
+        <img src="img/nemtPhoto.png" width="250" height="100" alt="Medical Transport Van"/>
+      </div>
+      <div class="revealable">
+        <h3>Social Impact</h3>
+        <p>Limited access to healthcare transportation can lead to social isolation, especially for those unable to attend medical appointments. This isolation can cause feelings of loneliness and depression, affecting mental well-being. It can also strain relationships, as individuals may need more support due to unmet healthcare needs. Improving transportation can help people stay connected and engaged in their communities. 
+        </p>
+      </div>
+
+      <div class="revealable">
+        <img src="img/economy_icon.png" alt="Econ icon" width="150" height="150"/>
+        <h3>Economic Impact</h3>
+        <p>Not having reliable transportation to healthcare can result in higher healthcare costs due to delayed treatment and complications. It can also lead to lost wages and reduced economic productivity for those unable to work because of health issues. This situation can worsen financial problems and contribute to ongoing poverty cycles. Addressing transportation challenges is crucial for maintaining economic stability and reducing financial strain on individuals and communities.
+        </p>
+      </div>
+
+      <div class="revealable">
+        <img src="img/healthcare.png" alt="Healthcare icon" width="150" height="150">
+ 
+        <h3>Healthcare Disparities</h3>
+        <p>Limited access to healthcare transportation disproportionately affects low-income and marginalized communities, worsening existing healthcare disparities. This lack of access can prevent people from receiving preventive care and health education, further deepening these disparities. Improving transportation options is essential for ensuring that everyone, regardless of their income or background, can access healthcare services and work towards health equity.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="petition revealable" id="petition">
+
+      <h2>Sign Our Petition 📢</h2>
+      <div class="petition-container">
+
+
+        <div class="petition-para">
+          <!-- info goes here -->
+          <p>Please join us in signing this petition to raise awareness about the challenge of limited transportation access. This issue affects individuals who may not have easy access to transportation, especially for essential healthcare services. Many people, including those with disabilities, chronic illnesses, or limited financial means, face difficulties getting to medical appointments, which are crucial for their health. By signing this petition, you can help highlight the importance of addressing transportation barriers and ensuring that everyone has equal access to healthcare. Together, we can advocate for solutions that make transportation more accessible for all.
+        </div>
+
+        <div class="signatures">
+          <p>🖊️ DJ from Brooklyn supports this.</p>
+          <p>🖊️ Amy from Queens supports this.</p>
+          <p>🖊️ Teresa from Harlem supports this.</p>
+          <p id ="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+        </div>
+
+      </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <!-- inputs go here -->
+      <label for ="name">Name: </label>
+      <input type="text" id="name" placeholder="name">
+      <label for ="hometown">Hometown: </label>
+      <input type="text" id="hometown" placeholder="hometown">
+      <label for ="email">Email: </label>
+      <input type="text" id="email" placeholder="email">
+        
+    </form>
+
+     <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+
+  <div class="overall revealable">
+    <h2>Recent News</h2>
+    <div class="news-div" id="news" >
+      <a class="news"
+          href="https://www.news4jax.com/news/local/2023/10/20/its-been-horrible-more-residents-report-issues-with-medical-transportation-provided-by-medicaid-say-its-unreliable/">
+          <article>
+              <h3>Unrelieable Medical Transportation by Medicaid - Jacksonville, Florida</h3>
+              <p>Residents in Jacksonville, Florida, are reporting issues with Medicaid-provided medical transportation, citing unreliability and missed appointments.</p>
+          </article>
+      </a>
+
+      <a class="news"
+          href="https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-022-14149-x">
+          <article>
+              <h3>BMC Public Health - Transportation Barriers</h3>
+              <p>This study explores transportation barriers for high-frequency health care users during the COVID-19 pandemic.</p>
+          </article>
+      </a>
+    </div>
+  </div>
+
+  <br> 
+  <div class="footer">
+    <h2> Learn More </h2>
+    <h2> Email our Team </h2>
+  </div>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content">Thanks for signing the petition!</p>
+        
+        <!-- button here (stretch feature) -->
+      </div>
+      <img id="modal-img" src="img/thankYou.png" alt="thank you" width="400" height="150"/><!-- image here-->
+    </div>
+
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
